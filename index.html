@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 text-white font-sans antialiased">
+    <header
+      class="h-screen flex flex-col justify-center items-center text-center p-6"
+    >
+      <img
+        src="eu.1.jpeg"
+        alt="Minha Foto"
+        class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 object-cover shadow-lg shadow-blue-500/20"
+      />
+      <h1
+        class="text-4xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 leading-tight max-w-4xl"
+      >
+        Olá, sou o Sergio Henrique Paschoalini Junior
+      </h1>
+
+      <p class="text-xl text-slate-400 max-w-2xl mb-8">
+        Desenvolvedor Full Stack apaixonado por python, mas busco sempre
+        melhorar o frontend.
+      </p>
+
+      <div class="flex gap-4">
+        <a
+          href="#projetos"
+          class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all"
+        >
+          Ver Projetos
+        </a>
+        <a
+          href="#contato"
+          class="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-lg transition-all hover:-translate-y-1"
+        >
+          Contato
+        </a>
+      </div>
+    </header>
+
+    <section id="projetos" class="py-24 px-6 bg-slate-800">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center text-blue-400 italic">
+          Meus Trabalhos Recentemente
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors shadow-xl"
+          >
+            <div
+              class="h-40 bg-slate-800 rounded-lg mb-4 overflow-hidden border border-slate-700"
+            >
+              <div
+                class="w-full h-full flex items-center justify-center text-slate-600 font-bold"
+              >
+                PREVIEW
+              </div>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Projeto GitHub</h3>
+            <p class="text-slate-400 mb-4 text-sm">
+              Descrição do projeto focada em resultados e tecnologias
+              utilizadas.
+            </p>
+            <a
+              href="https://github.com/seu-usuario"
+              target="_blank"
+              class="text-blue-400 hover:underline inline-flex items-center gap-2"
+            >
+              Ver Código <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-24 px-6 bg-slate-900">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4 text-emerald-400">Meus contatos</h2>
+        <p class="text-slate-400 mb-12">
+          Clique abaixo para ver meus dados de contato profissionais.
+        </p>
+
+        <div class="flex flex-col md:flex-row justify-center gap-8">
+          <div
+            class="bg-slate-800 p-8 rounded-3xl border border-slate-700 flex-1 flex flex-col items-center"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-tighter mb-4"
+              >E-mail</span
+            >
+            <div id="container-email" class="h-10 flex items-center gap-3">
+              <button
+                onclick="revelarContato('email')"
+                class="text-blue-400 hover:text-blue-300 transition-all font-medium"
+              >
+                Clique para revelar
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-800 p-8 rounded-3xl border border-slate-700 flex-1 flex flex-col items-center"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-tighter mb-4"
+              >WhatsApp</span
+            >
+            <div id="container-tel" class="h-10 flex items-center gap-3">
+              <button
+                onclick="revelarContato('tel')"
+                class="text-green-400 hover:text-green-300 transition-all font-medium"
+              >
+                Clique para revelar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 border-t border-slate-800">
+      <p>© 2026 - Desenvolvido com ☕ e Código.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
