@@ -1,139 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br" class="scroll-smooth">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sergio Henrique | Desenvolvedor Full Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-slate-900 text-white font-sans antialiased">
+</head>
+<body class="bg-slate-900 text-white font-sans antialiased">
     
     <header class="min-h-screen flex flex-col justify-center items-center text-center p-6">
-      <img
-        src="eu.1.jpeg"
-        alt="Minha Foto"
-        class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 object-cover shadow-lg shadow-blue-500/20"
-      />
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 leading-tight max-w-4xl">
-        Olá, sou o Sergio Henrique Paschoalini Junior
-      </h1>
-
-      <p class="text-xl text-slate-400 max-w-2xl mb-8">
-        Desenvolvedor Full Stack apaixonado por Python e automação de processos,
-        focado em transformar dados em soluções inteligentes.
-      </p>
-
-      <div class="flex gap-4">
-        <a href="#projetos" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all">
-          Ver Projetos
-        </a>
-        <a href="#contato" class="border border-slate-700 hover:bg-slate-800 px-6 py-3 rounded-lg transition-all hover:-translate-y-1">
-          Contato
-        </a>
-      </div>
+        <img src="eu.1.jpeg" alt="Minha Foto" class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6 object-cover shadow-lg shadow-blue-500/20" />
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400 leading-tight">
+            Olá, sou o Sergio Henrique Paschoalini Junior
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl mb-8">
+            Desenvolvedor Full Stack focado em Python, automação de processos e soluções desktop inteligentes.
+        </p>
+        <div class="flex gap-4">
+            <a href="#projetos" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-all">Ver Projetos</a>
+        </div>
     </header>
 
     <section id="projetos" class="py-24 px-6 bg-slate-800">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center text-blue-400 italic">
-          Meus Trabalhos Recentemente
-        </h2>
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-blue-400 italic">Meus Projetos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors shadow-xl">
+                    <div class="h-40 bg-slate-800 rounded-lg mb-4 overflow-hidden border border-slate-700 flex items-center justify-center">
+                        <img src="print-nba-final.png" alt="Analisador NBA" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">NBA Stats Tracker</h3>
+                    <p class="text-slate-400 mb-4 text-sm">Software desktop para análise em tempo real de estatísticas da NBA utilizando a API oficial e interface gráfica.</p>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20 font-bold">PYTHON</span>
+                        <span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-1 rounded border border-purple-500/20 font-bold">CUSTOMTKINTER</span>
+                    </div>
+                    <a href="https://github.com/SHPJ-developer/NBA-Stats" target="_blank" class="text-blue-400 hover:underline">Ver Código →</a>
+                </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-blue-500/50 transition-colors shadow-xl">
-            <div class="h-40 bg-slate-800 rounded-lg mb-4 overflow-hidden border border-slate-700 flex items-center justify-center">
-              <img 
-                src="print-nba.png" 
-                alt="Demonstração do Script NBA" 
-                class="w-full h-full object-cover object-top hover:scale-110 transition-transform duration-500"
-              />
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors shadow-xl">
+                    <div class="h-40 bg-slate-800 rounded-lg mb-4 overflow-hidden border border-slate-700 flex items-center justify-center">
+                        <img src="print-dolar.png" alt="Dollar Bot" class="w-full h-full object-cover" />
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Dollar Alert Bot</h3>
+                    <p class="text-slate-400 mb-4 text-sm">Automação financeira que monitora cotações e envia alertas via Telegram.</p>
+                    <div class="flex gap-2 mb-4">
+                        <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20 font-bold">PYTHON</span>
+                        <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20 font-bold">TELEGRAM API</span>
+                    </div>
+                    <a href="https://github.com/SHPJ-developer/Sinais-financeiros" target="_blank" class="text-emerald-400 hover:underline">Ver Código →</a>
+                </div>
             </div>
-            <h3 class="text-xl font-bold mb-2">NBA Stats Analyzer</h3>
-            <p class="text-slate-400 mb-4 text-sm">
-              Script Python para análise de performance recente (Last 10 games). 
-              Automatiza a coleta e tratamento de dados estatísticos.
-            </p>
-            <div class="flex gap-2 mb-4">
-                <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20 font-bold">PYTHON</span>
-                <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20 font-bold">PANDAS</span>
-            </div>
-            <a href="https://github.com/SHPJ-developer/nba-performace" target="_blank" class="text-blue-400 hover:underline inline-flex items-center gap-2">
-              Ver Código <span>→</span>
-            </a>
-          </div>
-
-          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors shadow-xl">
-            <div class="h-40 bg-slate-800 rounded-lg mb-4 overflow-hidden border border-slate-700 flex items-center justify-center relative group">
-              <img 
-                src="print-dolar.png" 
-                alt="Terminal do Dollar Alert Bot em execução" 
-                class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
-              />
-              <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span class="text-xs font-mono text-emerald-400">MONITORANDO USD/BRL</span>
-              </div>
-            </div>
-            <h3 class="text-xl font-bold mb-2">Dollar Alert Bot</h3>
-            <p class="text-slate-400 mb-4 text-sm">
-              Automação financeira que monitora USD/BRL e envia sinais de compra/venda via Telegram baseados em RSI e limites de preço.
-            </p>
-            <div class="flex gap-2 mb-4">
-                <span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-1 rounded border border-blue-500/20 font-bold">PYTHON</span>
-                <span class="text-[10px] bg-yellow-500/10 text-yellow-400 px-2 py-1 rounded border border-yellow-500/20 font-bold">YFINANCE</span>
-                <span class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-1 rounded border border-emerald-500/20 font-bold">TELEGRAM API</span>
-            </div>
-            <a href="https://github.com/SHPJ-developer/Sinais-financeiros" target="_blank" class="text-emerald-400 hover:underline inline-flex items-center gap-2">
-              Ver Código <span>→</span>
-            </a>
-          </div>
-
-          <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 border-dashed flex flex-col items-center justify-center text-center opacity-50">
-            <div class="text-3xl mb-2">🚀</div>
-            <h3 class="text-lg font-bold">Próximo Projeto</h3>
-            <p class="text-xs text-slate-500">Em desenvolvimento...</p>
-          </div>
-
         </div>
-      </div>
     </section>
 
-    <section id="contato" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4 text-emerald-400">Meus contatos</h2>
-        <p class="text-slate-400 mb-12">
-          Clique abaixo para ver meus dados de contato profissionais.
-        </p>
-
-        <div class="flex flex-col md:flex-row justify-center gap-8">
-          <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 flex-1 flex flex-col items-center">
-            <span class="text-xs font-bold text-slate-500 uppercase tracking-tighter mb-4">E-mail</span>
-            <div id="container-email" class="h-10 flex items-center gap-3">
-              <button onclick="revelarContato('email')" class="text-blue-400 hover:text-blue-300 transition-all font-medium">
-                Clique para revelar
-              </button>
-            </div>
-          </div>
-
-          <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 flex-1 flex flex-col items-center">
-            <span class="text-xs font-bold text-slate-500 uppercase tracking-tighter mb-4">WhatsApp</span>
-            <div id="container-tel" class="h-10 flex items-center gap-3">
-              <button onclick="revelarContato('tel')" class="text-green-400 hover:text-green-300 transition-all font-medium">
-                Clique para revelar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="py-12 text-center text-slate-600 border-t border-slate-800">
-      <p>© 2026 - Desenvolvido com ☕ e Código.</p>
+    <footer class="py-12 text-center text-slate-600">
+        <p>© 2026 - Desenvolvido com Python, Tailwind e muito café!</p>
     </footer>
 
     <script src="script.js"></script>
-  </body>
-</html>v
+</body>
+</html>
+
 
 
 
